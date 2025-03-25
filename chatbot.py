@@ -7,7 +7,7 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 def generate_flashcards(topic):
     # Your existing code to generate flashcards
     prompt = f"Generate 5 flashcards for the topic: {topic}. Format each as 'Ques: [question] Ans: [answer]'"
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-pro')
     response = model.generate_content(prompt)
     flashcards = response.text.split('\n')[:5]  # Adjust based on actual response format
     return flashcards
