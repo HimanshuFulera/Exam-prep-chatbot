@@ -215,40 +215,6 @@
             animation: fadeIn 0.5s ease forwards;
         }
 
-        /* Creators Section */
-        .creators-container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #FFFFFF;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .creators-container h2 {
-            font-size: 1.8em;
-            color: #2C3E50;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .creators-list {
-            list-style: none;
-            padding: 0;
-        }
-        .creator-item {
-            margin: 15px 0;
-            font-size: 1.1em;
-            color: #333333;
-        }
-        .creator-item strong {
-            color: #1ABC9C;
-            margin-right: 10px;
-        }
-        .creator-contact {
-            color: #555555;
-            margin-top: 5px;
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             .form-container { padding: 20px; }
@@ -261,7 +227,6 @@
             .flashcard .answer-label {
                 width: 60px;
             }
-            .creators-container { padding: 20px; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -310,36 +275,5 @@
             {% endfor %}
         </div>
     {% endif %}
-
-    <!-- New Creators Section -->
-    <div class="creators-container">
-        <h2>Meet the Creators</h2>
-        <ul class="creators-list">
-            <li class="creator-item">
-                <strong>John Doe</strong>
-                <div class="creator-contact">
-                    Email: john.doe@example.com<br>
-                    Mobile: +1-123-456-7890
-                </div>
-            </li>
-            <li class="creator-item">
-                <strong>Jane Smith</strong>
-                <div class="creator-contact">
-                    Email: jane.smith@example.com<br>
-                    Mobile: +1-234-567-8901
-                </div>
-            </li>
-            <li class="creator-item">
-                <strong>Alex Johnson</strong>
-                <div class="creator-contact">
-                    Email: alex.johnson@example.com<br>
-                    Mobile: +1-345-678-9012
-                </div>
-            </li>
-            <!-- Add more creators as needed -->
-        </ul>
-        <p style="margin-top: 20px; color: #555555;">This project was developed to help students prepare for exams efficiently. For inquiries, contact us at the above details.</p>
-    </div>
-
 </body>
 </html>
